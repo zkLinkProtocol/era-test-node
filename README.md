@@ -44,21 +44,6 @@ Please note that `era-test-node` is still in its **alpha** stage. Some features 
    apt-get install -y cmake pkg-config libssl-dev clang
    ```
 
-## 📥 Installation & Setup
-
-1. Download `era-test-node` from latest [Release](https://github.com/matter-labs/era-test-node/releases/latest)
-
-2. Extract the binary and mark as executable:
-   ```bash
-   tar xz -f era_test_node.tar.gz -C /usr/local/bin/
-   chmod +x /usr/local/bin/era_test_node
-   ```
-
-3. Start the node:
-   ```bash
-   era_test_node run
-   ```
-
 ## 🧑‍💻 Running Locally
 
 1. Compile Rust project and start the node:
@@ -70,6 +55,7 @@ Please note that `era-test-node` is still in its **alpha** stage. Some features 
 
 The system contract within the node can be specified via the `--dev-system-contracts` option. 
 It can take one of the following options:
+
    * `built-in`: Use the compiled built-in contracts
    * `built-in-no-verify`: Use the compiled built-in contracts, but without signature verification
    * `local`: Load contracts from `ZKSYNC_HOME`
